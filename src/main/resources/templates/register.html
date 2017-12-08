@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>login</title>
+<style type="text/css">
+	#registe-form{
+		background-color: rgb(243,243,243);
+		width:380px;
+		height: 360px;
+		margin: auto;
+		padding:50px;
+		border:1px solid rgb(231,231,231);
+	}
+	#registe-form p{
+		margin:0px;
+		margin-bottom: 20px;
+	}
+	#registe-form p span{
+		color:rgb(245,183,28);
+	}
+	#registe-form input{
+		height:60px;
+		border:1px solid rgb(199,199,199);
+		width:100%;
+		outline: none;
+		text-indent: 20px;
+		margin-bottom: 40px;
+	}
+	#fgpwd{
+		display: block;
+		float: right;
+		color:black;
+		text-decoration: none;
+		margin-bottom: 20px;
+	}
+	#registe-form input[type="submit"]{
+		height:60px;
+		border:none;
+		margin-bottom: 20px;
+		background-color: rgb(248,184,30);
+		font-weight: bold;
+		border-radius:5px;
+		cursor: pointer;
+	}
+</style>
+<script type="text/javascript">
+	window.onload = function(){
+		var iHeight = document.body.scrollHeight;
+		var marHeight = (iHeight-460)/2;
+		document.getElementById("registe-form").style.marginTop = marHeight+"px";
+	}
+</script>
+</head>
+<body>
+	<form action="" id="registe-form">
+		<p>Email address <span>*</span></p>
+		<input type="text" id="userName" name="userName"/>
+		<p>Password <span>*</span></p>
+		<input type="password" id="userPwd" name="userPwd"/>
+		<input type="submit" id="sub" value="REGISTE"/>
+		<p style="text-align: center;">Already have an account? <a href="http://localhost:8080/login" style="color:rgb(197,25,93);text-decoration: none">Login here</a></p>
+	</form>
+</body>
+</html>
